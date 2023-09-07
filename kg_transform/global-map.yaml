@@ -1,0 +1,82 @@
+#OCRe for study entities
+# visit or assessment -> planned observation
+'planned observation' : 'OCRE:300008' #http://purl.org/net/OCRe/study_protocol.owl#OCRE300008
+# DEMKG extensions
+vs_A-T-N-: DEMKG:0000500
+vs_A+T-N-: DEMKG:0000501
+vs_A-T+N-: DEMKG:0000502
+vs_A-T-N+: DEMKG:0000503
+vs_A+T+N-: DEMKG:0000504
+vs_A+T-N+: DEMKG:0000505
+vs_A-T+N+: DEMKG:0000506
+vs_A+T+N+: DEMKG:0000507
+
+# OBI
+'evaluant role': OBI:0000067
+'realized in': BFO:0000054
+'has_specified_input': OBI:0000293
+'is_specified_input_of': OBI:0000295
+'analyte role': OBI:0000275
+'value specification': OBI:0001933
+'collecting specimen from organism': OBI:0600005
+
+# UBERON
+csf: 'UBERON:0001359'
+
+# Biolink
+'has phenotype' : 'biolink:has_phenotype'
+# RO
+'has_phenotype' : 'RO:0002200'
+'has role': RO:0000087
+'role of': RO:0000081
+mentions: 'IAO:0000142'
+has_output: 'RO:0002234'
+'has part': BFO:0000051
+'part of': BFO:0000050
+realizes: BFO:0000055
+'realized in': BFO:0000054
+'inheres in': BFO:0000052
+'bearer of': BFO:0000053
+precedes: BFO:0000063
+
+#OGMS
+'clinical encounter': 'OGMS:0000097'
+'diagnosis' : 'OGMS:0000073'
+'clinical finding': 'OGMS:0000014'
+'health care process assay': 'OGMS:0000108'
+'clinical history taking': 'OGMS:0000055'
+#IAO
+'identifier' : 'IAO:0020000'
+'measurement datum': IAO:0000109
+'is about': IAO:0000136
+'has measurement unit label': IAO:0000039
+'has measurement value': IAO:0000004
+
+#NDDO
+'visit': 'NDDO:00000021'
+"visit specification": 'NDDO:00000105'
+"Visit Code": NDDO:00000111
+#SIO
+'has value' : 'SIO:000300'
+
+# Diseases and phenotypes
+'Dementia': 'MONDO:0001627'
+'SCD' : 'DOID:0080831'
+#'MCI' : 'DOID:0080832' 
+# there is no MCI in Mondo, only the cognitive impairment HP:0100543
+'MCI' : 'HP:0100543'
+
+'has quality' : 'RO:0000086'
+
+'female' : 'PATO:0000383'
+'male' : 'PATO:0000384'
+# Handedness phenotype
+'left' : 'PATO:0002202'
+'right' : 'PATO:0002203'
+'ambi' : 'PATO:0002204'
+
+# units
+'mg/L' : 'UO:0000273'
+'ng/mL' : 'UO:0000275'
+'fg/mL' : '' # TODO missing, add subclass of UO:0000182 mass density unit
+'pg/mL' : '' # TODO missing, add subclass of UO:0000182 mass density unit

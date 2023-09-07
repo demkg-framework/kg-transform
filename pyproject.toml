@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "my-project"
+version = "0.0.1"
+description = "kg-transform"
+authors = ["Santiago Timón <santiagotimon@dia.uned.es>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+setuptools = "^65.5.0"
+importlib = "^1.0.4"
+kgx = "^2.2.0"
+pandas = "^1.3.0"
+pyyaml = "^5.4.1"
+
+# [tool.poetry.dev-dependencies]
+# pytest = "^6.2.4"
+
+[tool.poetry.scripts]
+transform = "kg_transform.run:main"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "pep440"
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
